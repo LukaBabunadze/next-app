@@ -25,3 +25,16 @@ a {
   color: inherit;
 }
 
+.theme {
+  transition: 2s all ease;
+}
+
+.dark {
+  background-color: #111;
+  color: #bbb;
+}
+
+.light {
+  background-color: white;
+  color: #111;
+}
