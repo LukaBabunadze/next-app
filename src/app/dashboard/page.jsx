@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 function Dashboard() {
@@ -22,11 +23,15 @@ function Dashboard() {
 
       <button
         onClick={() => {
-          setUrl(" https://api.escuelajs.co/api/v1/products");
+          setUrl("https://api.escuelajs.co/api/v1/products");
         }}
       >
         მეორე
       </button>
+      <Link href={"/dashboard/crud"}>Go to crud operations</Link>
+      <br />
+      <br />
+      <Link href={"/dashboard/posts"}>Go to posts</Link>
     </div>
   );
 }
